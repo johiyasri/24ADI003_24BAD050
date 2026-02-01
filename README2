@@ -1,0 +1,143 @@
+Scenario 1: Ocean Water Temperature Prediction
+Problem Statement:
+
+Predict ocean water temperature using environmental and depth-related features such as salinity, oxygen, and geographic location.
+
+Dataset:
+
+Source: Kaggle – CalCOFI Dataset
+
+Link: https://www.kaggle.com/datasets/sohier/calcofi
+
+Target Variable:
+
+T_degC – Water Temperature (°C)
+
+Input Features
+
+Depth (m)
+
+Salinity
+
+Oxygen
+
+Latitude
+
+Longitude
+
+Methodology:
+
+Import required Python libraries (NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn)
+
+Load dataset into a Pandas DataFrame
+
+Select relevant numerical features
+
+Handle missing values using mean/median imputation
+
+Perform feature scaling using StandardScaler
+
+Split data into training and testing sets
+
+Train a Linear Regression model
+
+Predict water temperature on test data
+
+Evaluate model using:
+
+Mean Squared Error (MSE)
+
+Root Mean Squared Error (RMSE)
+
+R² Score
+
+Visualize:
+
+Actual vs Predicted temperatures
+
+Residual errors
+
+Optimize performance using:
+
+Feature selection
+
+Ridge and Lasso Regression
+
+Outcome:
+
+The regression model successfully predicts ocean temperature trends and demonstrates how environmental parameters influence water temperature.
+
+Scenario 2: LIC Stock Price Movement Classification
+Problem Statement:
+
+Classify whether the LIC stock price will increase or decrease based on historical trading data.
+
+Dataset:
+
+Source: Kaggle – LIC Stock Price Dataset
+
+Link: https://www.kaggle.com/datasets/debashis74017/lic-stock-price-data
+
+Target Variable (Derived):
+
+Price Movement
+
+1 → Closing Price > Opening Price
+
+0 → Closing Price ≤ Opening Price
+
+Input Features:
+
+Open
+
+High
+
+Low
+
+Volume
+
+Methodology:
+
+Import required Python libraries
+
+Load stock dataset into Pandas
+
+Create a binary target variable
+
+Handle missing values
+
+Perform feature scaling
+
+Split data into training and testing sets
+
+Train a Logistic Regression model
+
+Predict stock price movement
+
+Evaluate model using:
+
+Accuracy
+
+Precision
+
+Recall
+
+F1-Score
+
+Confusion Matrix
+
+Visualize:
+
+ROC Curve
+
+Feature importance
+
+Optimize model using:
+
+Hyperparameter tuning (C, penalty)
+
+Regularization techniques
+
+Outcome:
+
+The classification model effectively identifies upward and downward stock price movements, highlighting the usefulness of logistic regression in financial prediction tasks.
