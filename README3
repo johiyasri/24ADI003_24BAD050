@@ -1,0 +1,158 @@
+SCENARIO 1 – MULTILINEAR REGRESSION
+Problem Statement:
+
+Predict student academic performance based on academic, behavioral, and lifestyle factors.
+
+Dataset:
+
+Kaggle – Student Performance in Exams
+https://www.kaggle.com/datasets/spscientist/students-performance-in-exams
+
+Target Variable:
+
+Final Exam Score
+(Average of Math, Reading, Writing scores)
+
+Input Features:
+
+Study hours per day
+
+Attendance percentage
+
+Parental education level (encoded)
+
+Test preparation course (encoded)
+
+Sleep hours
+
+Implementation Steps:
+
+Imported required Python libraries (NumPy, Pandas, Matplotlib, Scikit-learn).
+
+Loaded the student performance dataset.
+
+Performed preprocessing:
+
+Handled categorical variables using encoding.
+
+Selected multiple input features.
+
+Computed target variable (average exam score).
+
+Handled missing values using imputation techniques.
+
+Applied feature scaling (Standardization).
+
+Split dataset into training and testing sets.
+
+Trained Multilinear Regression model.
+
+Predicted student performance on test data.
+
+Evaluation Metrics:
+
+MSE (Mean Squared Error) – Measures average squared prediction error.
+
+RMSE (Root Mean Squared Error) – Error in actual score units.
+
+R² Score – Model explanatory power.
+
+Model Interpretation:
+
+Regression coefficients were analyzed.
+
+Feature influence on academic performance was interpreted.
+
+Positive and negative impacts were identified.
+
+Model Optimization:
+
+Feature elimination performed.
+
+Regularization applied:
+
+Ridge Regression
+
+Lasso Regression
+
+Compared performance improvements.
+
+Visualizations:
+
+Predicted vs Actual Exam Scores
+
+Coefficient Magnitude Comparison
+
+Residual Distribution Plot
+
+SCENARIO 2 – POLYNOMIAL REGRESSION
+Problem Statement:
+
+Predict vehicle fuel efficiency based on engine horsepower where the relationship is non-linear.
+
+Dataset:
+
+Kaggle – Auto MPG Dataset
+https://www.kaggle.com/datasets/uciml/autompg-dataset
+
+Target Variable:
+
+Miles Per Gallon (MPG)
+
+Input Feature:
+
+Engine Horsepower
+
+Implementation Steps:
+
+Imported required libraries.
+
+Loaded Auto MPG dataset.
+
+Cleaned dataset and removed inconsistencies.
+
+Selected horsepower as independent variable.
+
+Handled missing values.
+
+Generated polynomial features:
+
+Degree 2
+
+Degree 3
+
+Degree 4
+
+Applied feature scaling.
+
+Split dataset into training and testing sets.
+
+Trained Polynomial Regression models.
+
+Predicted fuel efficiency values.
+
+Evaluation Metrics:
+
+MSE
+
+RMSE
+
+R² Score
+
+Performance of each polynomial degree was compared.
+
+Overfitting Control:
+
+Ridge Regression applied.
+
+Helped reduce variance in higher-degree models.
+
+Improved generalization on test data.
+
+Visualizations:
+
+Polynomial Curve Fitting (Degree comparison)
+
+Training vs Testing Error Graph
+
+Overfitting vs Underfitting Demonstration
